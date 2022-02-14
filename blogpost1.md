@@ -1,13 +1,15 @@
 ## Blog Post 1
 #### Written by Chris Durnan
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3c9TMJgjkDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## What is Spring / Springboot?          
 
 Springboot is an online web service that allows the creation of Java applications that utilize the **Spring framework**. The Spring framework is one of the most popular Java frameworks available, used by large tech companies such as VMWare and Netflix. Making use of Spring in Java can be done so manually, however Springboot allows you to create a preconfigured Java project to speed this process up. While doing so, they also provide the ability to add any dependencies that are necessary for your projects such as JPA for database connectivity and control.  I'll be detailing some of the benefits of both Spring and Springboot below. 
 
 
 
-![Springboot[(/docs/assets/springimg.png)
+![Springboot[(./docs/assets/springimg.png)
 
 *Springboot initializer. Provides options for project name and default packages along with Java version and any dependencies if necessary.*
 
@@ -215,7 +217,7 @@ These are just a few of the benefits that Spring and Springboot provide when cre
 
 ## RESTful Web Application
 
-Formy next blog post, I will be detailing the development of a RESTful web application utilizing Springboot. For now, I will provide a brief description and its uses. A RESTful web service utilizes methods similar to HTML methods, such as GET, POST, PUT or DELETE. This results in an efficient way to transport data between systems. The data itself is passed in a JSON or XML format which is easily converted for display on a web page, or can be used to create new objects in a programming language such as Java. API's can be used to help create a wide variety of applications and public API's are available from a variety of places from Google to Spotify to the City of Calgary. 
+For my next blog post, I will be detailing the development of a RESTful web application utilizing Springboot. For now, I will provide a brief description and its uses. A RESTful web service utilizes methods similar to HTML methods, such as GET, POST, PUT or DELETE. This results in an efficient way to transport data between systems. The data itself is passed in a JSON or XML format which is easily converted for display on a web page, or can be used to create new objects in a programming language such as Java. API's can be used to help create a wide variety of applications and public API's are available from a variety of places from Google to Spotify to the City of Calgary. 
 
 For Springboot, these methods are usually implemented in a Service or Controller class within Java similar to the one shown below. This class then provides an API for your front-end application to connect to, from which it can retrieve or send data. 
 
