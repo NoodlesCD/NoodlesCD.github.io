@@ -7,11 +7,8 @@
 
 Springboot is an online web service that allows the creation of Java applications that utilize the **Spring framework**. The Spring framework is one of the most popular Java frameworks available, used by large tech companies such as VMWare and Netflix. Making use of Spring in Java can be done so manually, however Springboot allows you to create a preconfigured Java project to speed this process up. While doing so, they also provide the ability to add any dependencies that are necessary for your projects such as JPA for database connectivity and control.  I'll be detailing some of the benefits of both Spring and Springboot below. 
 
-
-
-![Springboot[(./docs/assets/springimg.png)
-
-*Springboot initializer. Provides options for project name and default packages along with Java version and any dependencies if necessary.*
+> <img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/springimg.png?raw=true">
+> <sup>*Springboot initializer. Provides options for project name and default packages along with Java version and any dependencies if necessary.*</sup>
 
 <br>
 
