@@ -7,7 +7,7 @@ Springboot is an online web service that allows the creation of Java application
 
 
 
-![[Pasted image 20220125165200.png]]
+![Springboot[(/docs/assets/springimg.png)
 
 *Springboot initializer. Provides options for project name and default packages along with Java version and any dependencies if necessary.*
 
