@@ -153,6 +153,7 @@ When an Item is passed into the ItemRepository, Hibernate can automatically crea
 
 Using Springboot we can easily create validation for form fields in our system. This can be useful if you wish to create a Java-based UI or you would prefer to have Java handle validation on a web-page. We can implement this using several annotations assigned to the attributes in a Java class, such as our Customer class below.
 
+<br>
 
 > ```java
 > public class Customer {
@@ -249,6 +250,8 @@ Now that we have created our annotation and validation, we can finally add it to
 <br>
 
 These are just a few of the benefits that Spring and Springboot provide when creating an application. Making use of the features provided can greatly increase code reusability, reduce clutter and boilerplate code and allow easy connectivity between front and backend systems. 
+
+<br>
 
 <hr>
 
