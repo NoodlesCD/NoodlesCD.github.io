@@ -119,7 +119,7 @@ Hibernate also provides support for different relationships between tables, such
 
 Above we have an example of a Repository interface. The Repository provides methods for working with your database. For example, `ItemRepository.findAll()` would return a list of all of the Items in the database. For storing an Item, `ItemRepository.save(item)` would be used. In the example below, we have an Item class with annotations that signify that this will be something to be persisted. 
 
-When an Item is passed into the ItemRepository, Hibernate can automatically create any tables or columns that are necessary before storing the object. Another benefit of using a repository class is that the methods from it provide some degree of protection from SQL injection. Custom SQL queries do not have this protection, so it is important to implement security features in such a situation. 
+When an Item is passed into the ItemRepository, Hibernate can **automatically create any tables or columns** that are necessary before storing the object. Another benefit of using a repository class is that the methods from it provide some degree of protection from SQL injection. Custom SQL queries do not have this protection, so it is important to implement security features in such a situation. 
 
 <br>
 
@@ -190,7 +190,7 @@ To actually perform the checking, we can create a method with our `Customer` cla
 
 <br>
 
-Both Spring and Springboot make heavy use of annotations. We can even create our own annotations for use with validation. This increases code reusability and saves time as we are able to write a single annotation whenever they are desired as opposed to an extra block of code within your class. We do this by creating an Annotation interface and a Validation class. For this example we will create these to validate a phone number for our Customer class above. 
+Both Spring and Springboot make heavy use of annotations. We can even **create our own annotations** for use with validation. This increases **code reusability and saves time** as we are able to write a single annotation whenever they are desired as opposed to an extra block of code within your class. We do this by creating an Annotation interface and a Validation class. For this example we will create these to validate a phone number for our Customer class above. 
 
 First, our annotation interface. In the example below, note the @ symbol before interface. The Target annotation can be FIELD or METHOD (or both) depending on where you would like to use your new annotation. The Constraint annotation signifies the class that will be performing the validation, which we will create after. The message method represents the error message in the case of invalidity. The two other methods are necessary to add for Springboot but are rarely used features. 
 
@@ -211,7 +211,7 @@ First, our annotation interface. In the example below, note the @ symbol before 
 
 <br>
 
-Now that the annotation interface is complete, we can implement our Validator. For our class here we will have to pass an annotation, which we created above. Below, the initialize method can remain blank, you will want to pass the name of the annotation interface as a parameter. The isValid method is where we perform our actual validation. We will pass the input to be validated along with a ConstraintValidatorContext object. For a phone number, you could implement some regex checks, I have left this out for now though. If the input is valid, return true, otherwise return false. 
+Now that the annotation interface is complete, we can implement our Validator. For our class here we will have to pass an annotation, which we created above. Below, the `initialize` method can remain blank, you will want to pass the name of the annotation interface as a parameter. The `isValid` method is where we perform our actual validation. We will pass the input to be validated along with a `ConstraintValidatorContext` object. For a phone number, you could implement some regex checks, I have left this out for now though. If the input is valid, return true, otherwise return false. 
 
 <br>
 
