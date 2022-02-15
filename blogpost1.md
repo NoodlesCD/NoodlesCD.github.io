@@ -15,7 +15,11 @@ Today I'll be going over Spring and Springboot, describing a few of the benefits
 - Using JPA and Hibernate for Persistence
 - Form Validation
 
+<br>
+
 <hr>
+
+<br>
 
 ## What is Spring / Springboot?          
 
@@ -27,6 +31,8 @@ Springboot is an online web service that allows the creation of Java application
 <br>
 
 <hr>
+
+<br>
 
 ## Dependency Injection
 
@@ -91,6 +97,8 @@ Although dependency injection can be done manually in Java like the examples abo
 
 <hr>
 
+<br>
+
 ## JPA, Hibernate and Persistence
 
 > ### Persist Java objects without SQL code or queries
@@ -136,6 +144,8 @@ When an Item is passed into the ItemRepository, Hibernate can automatically crea
 <br>
 
 <hr>
+
+<br>
 
 ## Form Validation
 
@@ -242,6 +252,8 @@ These are just a few of the benefits that Spring and Springboot provide when cre
 
 <hr>
 
+<br>
+
 ## RESTful Web Application
 
 For my next blog post, I will be detailing the development of a RESTful web application utilizing Springboot. For now, I will provide a brief description and its uses. A RESTful web service utilizes methods similar to HTML methods, such as GET, POST, PUT or DELETE. This results in an efficient way to transport data between systems. 
@@ -283,6 +295,8 @@ We will be using MariaDB for our database and ReactJS for our frontend webpages.
 I thank you for taking the time to read my blog post (or at least some parts of it). I have had a few frustrating moments with Spring/Springboot (namely many-to-many relationships and bridging tables) but hopefully I can shed some of my learnings on these matters to reduce frustration in others. Using it, I can understand some of its capabilities and why it is so popular (almost 60% of Java developers according to JVM ecosystem report). Thanks again!
 
 ---
+
+<br>
 
 ###### Reference Material
 
