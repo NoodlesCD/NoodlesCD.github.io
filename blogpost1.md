@@ -3,7 +3,9 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3c9TMJgjkDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br> <br>
+<br>
+
+<hr>
 
 ### Creating applications can often take a substantial amount of time due to their complexity. Fortunately, there are many frameworks that not only help reduce the amount of time you have to spend coding but can also result in cleaner and easier to manage code. 
 
@@ -12,6 +14,8 @@ Today I'll be going over Spring and Springboot, describing a few of the benefits
 - Dependency Injection
 - Using JPA and Hibernate for Persistence
 - Form Validation
+
+<hr>
 
 ## What is Spring / Springboot?          
 
@@ -22,9 +26,11 @@ Springboot is an online web service that allows the creation of Java application
 
 <br>
 
+<hr>
+
 ## Dependency Injection
 
-### Increase code maintainability and make testing easier
+> ### Increase code maintainability and make testing easier
 
 The most common use for Spring is the use of **dependency injection**. A **dependency** is where an object **depends on another object** for some of its functionality. Typically, the dependant object will construct the dependency, however, with dependency injection it can instead be **passed as a parameter** either in a constructor or setter method. 
 
@@ -83,9 +89,11 @@ Although dependency injection can be done manually in Java like the examples abo
 
 <br>
 
+<hr>
+
 ## JPA, Hibernate and Persistence
 
-### Persist Java objects without SQL code or queries
+> ### Persist Java objects without SQL code or queries
 
 Spring also supports JPA for enabling **database connectivity and transactions** through Java. This works exceptionally well with Springboot's support for **Hibernate**. Hibernate allows Java objects to be easily converted into database tables, **without the need for SQL code or queries**. This both saves the developer time and leads to code that is less cluttered and easier to maintain. 
 
@@ -127,7 +135,12 @@ When an Item is passed into the ItemRepository, Hibernate can automatically crea
 
 <br>
 
+<hr>
+
 ## Form Validation
+
+> ### Validate input using @Annotations
+
 Using Springboot we can easily create validation for form fields in our system. This can be useful if you wish to create a Java-based UI or you would prefer to have Java handle validation on a web-page. We can implement this using several annotations assigned to the attributes in a Java class, such as our Customer class below.
 
 
@@ -227,6 +240,7 @@ Now that we have created our annotation and validation, we can finally add it to
 
 These are just a few of the benefits that Spring and Springboot provide when creating an application. Making use of the features provided can greatly increase code reusability, reduce clutter and boilerplate code and allow easy connectivity between front and backend systems. 
 
+<hr>
 
 ## RESTful Web Application
 
