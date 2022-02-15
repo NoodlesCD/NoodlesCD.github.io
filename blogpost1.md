@@ -1,7 +1,17 @@
-## Blog Post 1
+## Useful Benefits of Spring, Springboot and REST API's
 #### Written by Chris Durnan
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3c9TMJgjkDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br> <br>
+
+### Creating applications can often take a substantial amount of time due to their complexity. Fortunately, there are many frameworks that not only help reduce the amount of time you have to spend coding but can also result in cleaner and easier to manage code. 
+
+Today I'll be going over Spring and Springboot, describing a few of the benefits of them and showing how to implement some into your projects. These will include:
+
+- Dependency Injection
+- Using JPA and Hibernate for Persistence
+- Form Validation
 
 ## What is Spring / Springboot?          
 
@@ -14,7 +24,9 @@ Springboot is an online web service that allows the creation of Java application
 
 ## Dependency Injection
 
-The most common use for Spring is the use of **dependency injection**. A dependency is where an object depends on another object for some of its functionality. Typically, the dependant object will construct the dependency, however, with dependency injection it can instead be passed as a parameter either in a constructor or setter method. 
+### Increase code maintainability and make testing easier
+
+The most common use for Spring is the use of **dependency injection**. A **dependency** is where an object **depends on another object** for some of its functionality. Typically, the dependant object will construct the dependency, however, with dependency injection it can instead be **passed as a parameter** either in a constructor or setter method. 
 
 <br>
 
@@ -51,7 +63,7 @@ The most common use for Spring is the use of **dependency injection**. A depende
 
 <br>
 
-One benefit of dependency injection is that makes code maintainability and adjustment easier. Looking at the first example above, if we wanted to change the Television Item to a different Item, such as Keyboard, we would have to manually change the ShoppingCart class. In the second example, there is no need to change the code since the necessary Item is passed as a parameter. 
+One benefit of dependency injection is that makes **code maintainability and adjustment easier**. Looking at the first example above, if we wanted to change the Television Item to a different Item, such as Keyboard, we would have to manually change the ShoppingCart class. In the second example, there is no need to change the code since the necessary Item is passed as a parameter. 
 
 Although dependency injection can be done manually in Java like the examples above, Spring can also take care of it automatically. Later in the blog post, we will discuss using Spring to build an API. For this API we will have a Controller class that automatically instantiates a Repository class thanks to Spring. This is achieved through the `@Autowired` annotation. 
 
@@ -73,7 +85,9 @@ Although dependency injection can be done manually in Java like the examples abo
 
 ## JPA, Hibernate and Persistence
 
-Spring also supports JPA for enabling database connectivity and transactions through Java. This works exceptionally well with Springboot's support for **Hibernate**. Hibernate allows Java objects to be easily converted into database tables, without the need for SQL code or queries. This both saves the developer time and leads to code that is less cluttered and easier to maintain. 
+### Persist Java objects without SQL code or queries
+
+Spring also supports JPA for enabling **database connectivity and transactions** through Java. This works exceptionally well with Springboot's support for **Hibernate**. Hibernate allows Java objects to be easily converted into database tables, **without the need for SQL code or queries**. This both saves the developer time and leads to code that is less cluttered and easier to maintain. 
 
 Hibernate also provides support for different relationships between tables, such as one-to-one, one-to-many or many-to-many. In many-to-many relationships, two Java objects can be linked so that a bridging table is automatically created between them once the application is run. This is accomplished by using a `@JoinColumn` or `@JoinTable` annotation between a List or Set present in both classes. 
 
@@ -87,7 +101,9 @@ Hibernate also provides support for different relationships between tables, such
 
 <br>
 
-Above we have an example of a Repository interface. The Repository provides methods for working with your database. For example, `ItemRepository.findAll()` would return a list of all of the Items in the database. For storing an Item, `ItemRepository.save(item)` would be used. In the example below, we have an Item class with annotations that signify that this will be something to be persisted. When an Item is passed into the ItemRepository, Hibernate can automatically create any tables or columns that are necessary before storing the object. Another benefit of using a repository class is that the methods from it provide some degree of protection from SQL injection. Custom SQL queries do not have this protection, so it is important to implement security features in such a situation. 
+Above we have an example of a Repository interface. The Repository provides methods for working with your database. For example, `ItemRepository.findAll()` would return a list of all of the Items in the database. For storing an Item, `ItemRepository.save(item)` would be used. In the example below, we have an Item class with annotations that signify that this will be something to be persisted. 
+
+When an Item is passed into the ItemRepository, Hibernate can automatically create any tables or columns that are necessary before storing the object. Another benefit of using a repository class is that the methods from it provide some degree of protection from SQL injection. Custom SQL queries do not have this protection, so it is important to implement security features in such a situation. 
 
 <br>
 
@@ -214,7 +230,9 @@ These are just a few of the benefits that Spring and Springboot provide when cre
 
 ## RESTful Web Application
 
-For my next blog post, I will be detailing the development of a RESTful web application utilizing Springboot. For now, I will provide a brief description and its uses. A RESTful web service utilizes methods similar to HTML methods, such as GET, POST, PUT or DELETE. This results in an efficient way to transport data between systems. The data itself is passed in a JSON or XML format which is easily converted for display on a web page, or can be used to create new objects in a programming language such as Java. API's can be used to help create a wide variety of applications and public API's are available from a variety of places from Google to Spotify to the City of Calgary. 
+For my next blog post, I will be detailing the development of a RESTful web application utilizing Springboot. For now, I will provide a brief description and its uses. A RESTful web service utilizes methods similar to HTML methods, such as GET, POST, PUT or DELETE. This results in an efficient way to transport data between systems. 
+
+The data itself is passed in a JSON or XML format which is easily converted for display on a web page, or can be used to create new objects in a programming language such as Java. API's can be used to help create a wide variety of applications and public API's are available from a variety of places from Google to Spotify to the City of Calgary. 
 
 For Springboot, these methods are usually implemented in a Service or Controller class within Java similar to the one shown below. This class then provides an API for your front-end application to connect to, from which it can retrieve or send data. 
 
@@ -244,7 +262,9 @@ For Springboot, these methods are usually implemented in a Service or Controller
 
 ---
 
-In my next blog post I will go into greater detail as to the actual implementation of some of the topics covered above. Using Springboot, we will create a shopping cart application. Items will be stored in the database which will then be retrieved and displayed on a web page. A customer will then have the ability to add items to a shopping cart, after which their shopping cart and their respective items will be stored in the database as well. We will be using MariaDB for our database and ReactJS for our frontend webpages. However, any database system (MySQL, Mongo, SQLPlus) will work for this, and ReactJS is not necessary either, plain old HTML/JS would work fine. 
+In my next blog post I will go into greater detail as to the actual implementation of some of the topics covered above. Using Springboot, we will create a shopping cart application. Items will be stored in the database which will then be retrieved and displayed on a web page. A customer will then have the ability to add items to a shopping cart, after which their shopping cart and their respective items will be stored in the database as well. 
+
+We will be using MariaDB for our database and ReactJS for our frontend webpages. However, any database system (MySQL, Mongo, SQLPlus) will work for this, and ReactJS is not necessary either, plain old HTML/JS would work fine. 
 
 I thank you for taking the time to read my blog post (or at least some parts of it). I have had a few frustrating moments with Spring/Springboot (namely many-to-many relationships and bridging tables) but hopefully I can shed some of my learnings on these matters to reduce frustration in others. Using it, I can understand some of its capabilities and why it is so popular (almost 60% of Java developers according to JVM ecosystem report). Thanks again!
 
