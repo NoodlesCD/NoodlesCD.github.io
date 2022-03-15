@@ -281,6 +281,7 @@ Now that we have our Cart class complete, we can move back into our Stock class 
 
 <br>
 
+
 <details>
   <summary>Click to expand</summary>
   
@@ -310,9 +311,10 @@ public class Stock {
 	// constructors/methods
 }
 ```
-	
+
 </details>
   
+	
 <br>
 
 The only major differences are the addition of the `@JsonIgnore` annotation and simplified `@ManyToMany` annotation. Because both Carts and Stock are referencing each other, you can run into a problem with recursive JSON data when we are retreiving that information from our frontend later on. The `@JsonIgnore` annotation will ignore this attribute when it is passed and prevent this from happening.
@@ -429,7 +431,8 @@ public class StockController {
 	}
 }
 ```
-  </details>
+
+</details>
 
 <br>
 
