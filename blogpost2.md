@@ -310,7 +310,8 @@ public class Stock {
 	// constructors/methods
 }
 ```
-  </details>
+	
+</details>
   
 <br>
 
