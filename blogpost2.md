@@ -235,6 +235,7 @@ Our Cart class should now be complete. The final result should look something li
 <br>
 
 ```java
+
 @Entity
 @Table(name = "CARTS")
 public class Cart {
@@ -267,6 +268,7 @@ public class Cart {
 	
 	// constructors/methods
 }
+
 ```
 
 <br>
