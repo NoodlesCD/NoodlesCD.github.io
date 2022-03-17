@@ -410,8 +410,9 @@ Now to move onto our StockController. Again, if you want to try it yourself you 
 
 <br>
 
+	
 <details>
-  <summary>Click to expand</summary>
+<summary>Click to expand</summary>
   
 ```java
 @RestController
@@ -433,6 +434,8 @@ public class StockController {
 ```
 
 </details>
+
+
 
 <br>
 
