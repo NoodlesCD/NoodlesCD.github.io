@@ -24,7 +24,7 @@ https://start.spring.io/
 
 You will be presented with several options. For our purposes, we can go with the default choices for Project, Language and Springboot. At the time of writing these were Maven Project, Java and 2.6.4 respectively. Project metadata, packing and Java version can be of your own choice. Finally, make sure to add the dependencies necessary for our project. You will need Spring Web, Spring Data JPA and your choice of database driver of which I chose MariaDB.
 
-![[Pasted image 20220315090341.png]]
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/1.png?raw=true">
 
 Once you have everything chosen, click the Generate button on the Initializer page and you will be given a Java project which can be opened in any IDE of your choice. 
 
@@ -70,7 +70,7 @@ spring.jpa.properties.hibernate.format_sql = true
 
 For our shopping cart application we will need to build some functionality for the shopping cart itself plus the items that will be stored in the shopping carts. To start, create two new packages, `cart` and `stock`. In this example these will be located in the `com.sait.shoppinglist` package. Within these packages create a new class for `Cart` and `Stock`.
 
-![[Pasted image 20220315092007.png]]
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/2.png?raw=true">
 
 <br>
 
@@ -285,8 +285,9 @@ Now that we have our Cart class complete, we can move back into our Stock class 
 
 
 <details>
-  <summary>Click to expand</summary>
-  
+<summary>Click to expand</summary>
+
+
 ```java
 @Entity
 @Table(name = "STOCK")
@@ -415,7 +416,8 @@ Now to move onto our StockController. Again, if you want to try it yourself you 
 	
 <details>
 <summary>Click to expand</summary>
-  
+
+	
 ```java
 @RestController
 @RequestMapping(path = "/stock")
@@ -480,9 +482,9 @@ public class StockGeneration {
 
 When you run your application, Spring should connect with your database, generate necessary tables/sequences and populate the Stock table with the items above. In the screenshots below I am using HeidiSQL.
 
-![[Pasted image 20220315112252.png]]
-
-![[Pasted image 20220315112309.png]]
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/3.png?raw=true">
+	
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/4.png?raw=true">
 
 <br>
 
@@ -493,7 +495,7 @@ When you run your application, Spring should connect with your database, generat
 ## Creating the Front End
 In the frontend I used ReactJS, which is not necessary, regular HTML and Javascript would work perfectly fine. For the sake of brevity I will ignore most of the React code and just go over the basic functions that are needed. Below I have a screenshot of a simple design for our frontend. We can enter a customer name at the top and add individual items to the cart.
 
-![[Pasted image 20220315113549.png]]
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/5.png?raw=true">
 
 ### Fetching Stock Items
 We will need to fetch our items so that we can actually add them into our shopping cart. There are a number of methods to do this, here we will use axios to make an API call and add the JSON response to our itemList in JS using the `setItemList` function.
@@ -536,5 +538,5 @@ sendCartToDB();
 
 I will add the full React code at the end of this blog post if you want to take a look. Our application should be fully functional now. We can now add a couple carts to see it in action. The information should be sent from your webpage to the Java Spring application and then finally persisted in your database.
 
-![[Pasted image 20220315120039.png]]
+<img src="https://github.com/NoodlesCD/noodlescd.github.io/blob/main/docs/assets/6.png?raw=true">
 
