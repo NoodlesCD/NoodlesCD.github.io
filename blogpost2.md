@@ -285,10 +285,10 @@ Now that we have our Cart class complete, we can move back into our Stock class 
 
 
 <details>
-<summary>Click to expand</summary>
-
-
+<summary>Click to expand</summary><p>
+	
 ```java
+	
 @Entity
 @Table(name = "STOCK")
 public class Stock {
@@ -313,9 +313,10 @@ public class Stock {
 
 	// constructors/methods
 }
+	
 ```
 
-</details>
+</p></details>
   
 	
 <br>
