@@ -294,7 +294,7 @@ Now that we have our Cart class complete, we can move back into our Stock class 
 
 
 <details>
-<summary>Click to expand</summary><p>
+<summary>Click to expand</summary>
 	
 ```java
 	
@@ -325,7 +325,7 @@ public class Stock {
 	
 ```
 
-</p></details>
+</details>
   
 	
 <br>
@@ -426,7 +426,6 @@ Now to move onto our StockController. Again, if you want to try it yourself you 
 	
 <details>
 <summary>Click to expand</summary>
-
 	
 ```java
 @RestController
@@ -756,6 +755,25 @@ function App() {
 
 export default App;
 ```
-	
-</summary>
+
+</details>
+
+<br>
+
+---
+
+<br>
+
+###### Reference Material
+
+1. https://spring.io/guides/gs/rest-service/
+2. https://spring.io/guides/tutorials/rest/
+3. https://spring.io/guides/gs/accessing-data-rest/
+4. https://springframework.guru/configuring-spring-boot-for-mariadb/
+5. https://axios-http.com/docs/post_example
+6. https://www.geeksforgeeks.org/spring-dependency-injection-with-example/
+7. https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
+8. https://spring.io/guides/gs/validating-form-input/
+9. https://www.baeldung.com/spring-mvc-custom-validator
+10. https://snyk.io/blog/spring-dominates-the-java-ecosystem-with-60-using-it-for-their-main-applications/
 
